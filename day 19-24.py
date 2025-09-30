@@ -165,9 +165,9 @@ os.system('cls')
 #     print(sum(many))
 # sum_user()
 #17
-#Mini Project (Student Info)
+#Mini Project (Student Info--Recursive function basic)
 # student_dict={} #Global Dictionary can be accessed for all functions.
-# def student_info():
+# def student_info(x):
 #     name = input("Enter student name: ")
 #     age = int(input("Enter students's age: "))
 #     roll_no= int(input("Enter students's Roll No: "))
@@ -178,7 +178,13 @@ os.system('cls')
 #     student_dict[roll_no]["Roll No"]=roll_no
 #     student_dict[roll_no]["Enrolled Year"]=enrolled
 #     student_dict.update(student_dict[roll_no])
-# # student_info() 
+#     print(f"Dictionary of this student: {student_dict[roll_no]}")
+#     if (x==1):
+#         print(f"Whole Dictionary: {student_dict}")
+#         return
+#     else:
+#         student_info(x-1)
+# student_info(2) 
 # def student_update():
 #     check=int(input("Enter Roll no who you wanna update: "))
 #     if check in student_dict:
@@ -424,13 +430,16 @@ os.system('cls')
 #     list.append(n%10)
 # print(list)
 #45
-# num=[12,453,3444,2,677777,43931]
-# def ln(x):
+# def length(x):
 #     return len(x)
-# print(sorted(num,key=))
-# print(num)
+# lis=[["chairs","tables"],["mangoes","vegies","chairs"],["milk"]]
+# print(sorted(lis,key=(length)))
+# # def ln(x):
+#     str(x)
+#     return sorted(x,key=len(x))
+# print(ln(num))
 # 46(for calculating length of the integers)
-# list=[]
+# list=[]t                                                                                                                                                    
 # num=[12,333,5,6345]
 # for n in num:
 #     list.append(len(str(n)))
@@ -561,9 +570,21 @@ os.system('cls')
 #         print(i)
 #     print(f"This is marks_dict all: {marks_dict}")
 # student_info()
-
-
-
+#60
+#factorial
+# def factorial(x):
+#     num=1
+#     for i in range(x,0,-1):
+#         num*=i
+#     print(f"This is the factorial of {x}: {num}")
+# factorial(4)
+#61
+#conversion of usd into Pkr
+# def usd_conv(x):
+#     rate=int(input("Enter the current rate of 1 USD to PKR: "))
+#     conv= x*rate
+#     print(f"{x} USD = {conv} PKR")
+# usd_conv(60)
 
 
 
